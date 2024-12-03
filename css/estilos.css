@@ -14,17 +14,18 @@ body {
 
 /* Contenedor principal */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header */
 header {
     background: linear-gradient(135deg, #0062cc, #0056b3);
     color: white;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative; /* Para que el botón se posicione en relación con el header */
 }
 
 header h1 {
@@ -38,12 +39,15 @@ header p {
     margin-bottom: 30px;
 }
 
+/* Botón posicionado en la esquina superior derecha */
 header .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el lado derecho */
+    padding: 10px 20px;
     background-color: #f8f9fa;
     color: #0062cc;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 50px;
@@ -55,6 +59,7 @@ header .cta-button:hover {
     background-color: #0056b3;
     color: white;
 }
+
 
 /* Search Section */
 .search-section {
