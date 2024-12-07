@@ -22,9 +22,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-
-
-console.log(__dirname);
+// invocar al modulo de la conexion de la BD
+ const connection= require('./database/db');
 
 app.get('/', (req, res) => {
     res.send('Hola Mundo');
