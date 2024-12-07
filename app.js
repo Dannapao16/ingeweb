@@ -24,9 +24,13 @@ app.use(session({
 
 // invocar al modulo de la conexion de la BD
  const connection= require('./database/db');
-
+//establecer las rutas
 app.get('/', (req, res) => {
-    res.send('Hola Mundo');
+    res.render('index');
+});
+
+app.get('/login', (req, res) => {
+    res.render('login');
 });
 
 app.listen(3000, () => {

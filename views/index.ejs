@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBINNER - Encuentra tu Empleo Ideal</title>
+    <link rel="stylesheet" href="resources/css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <%- include('partials/header.ejs') %>
+
+    <!-- Search Section -->
+    <section id="buscar" class="search-section">
+        <div class="container">
+            <h2>Busca tu próximo trabajo</h2>
+            <form action="/buscar" method="GET">
+                <input type="text" placeholder="¿Qué trabajo buscas?" name="job">
+                <input type="text" placeholder="Ubicación" name="location">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Job Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories">
+                <div class="category">
+                    <h3>Tecnología</h3>
+                    <p>Explora empleos en desarrollo, diseño y más.</p>
+                </div>
+                <div class="category">
+                    <h3>Marketing</h3>
+                    <p>Encuentra oportunidades en marketing digital y ventas.</p>
+                </div>
+                <div class="category">
+                    <h3>Educación</h3>
+                    <p>Empleos en enseñanza y educación para todos los niveles.</p>
+                </div>
+                <div class="category">
+                    <h3>Salud</h3>
+                    <p>Oportunidades en el sector de la salud y medicina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Eres reclutador?</h2>
+            <p>Publica tus vacantes y encuentra al candidato ideal.</p>
+            <a href="/registrar" class="cta-button">Regístrate como Empresa</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include ('partials/footer.ejs') %>
+</body>
+</html>
