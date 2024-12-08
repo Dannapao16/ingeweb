@@ -33,6 +33,10 @@ app.get('/login', (req, res) => {
     res.render('login');
 });
 
+app.get('/register', (req, res) => {
+    res.render('register');
+});
+
 app.listen(3000, () => {
     console.log('Server running in http://localhost:3000'); // Corrige el puerto aquí
 });
