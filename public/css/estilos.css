@@ -1,31 +1,31 @@
-/* Reset CSS para eliminar márgenes y paddings predeterminados */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fuentes */
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
     background-color: #f8f9fa;
 }
 
-/* Contenedor principal */
+
 .container {
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
-/* Header */
+
 header {
     background: linear-gradient(135deg, #0062cc, #0056b3);
     color: white;
     padding: 20px 0;
     text-align: center;
-    position: relative; /* Para que el botón se posicione en relación con el header */
+    position: relative; /* Para que el botón se posicione en relacisón con el header */
 }
 
 header h1 {
@@ -61,7 +61,7 @@ header .cta-button:hover {
 }
 
 
-/* Search Section */
+
 .search-section {
     background-color: #ffffff;
     padding: 60px 0;
@@ -107,7 +107,7 @@ header .cta-button:hover {
     background-color: #0056b3;
 }
 
-/* Categories Section */
+
 .categories-section {
     background-color: #f1f3f5;
     padding: 60px 0;
