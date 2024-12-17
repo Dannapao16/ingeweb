@@ -12,30 +12,6 @@ CREATE TABLE Usuarios (
     FechaRegistro DATETIME DEFAULT CURRENT_TIMESTAMP,
     Activo BOOLEAN DEFAULT 1
 );
-
--- Insertar datos en Usuarios
-INSERT INTO Usuarios (Nombre, Apellido, Email, Contrasena, TipoUsuario) VALUES
-('Juan', 'Pérez', 'juan.perez@mail.com', 'Juan1', 'Postulante'),
-('Ana', 'López', 'ana.lopez@mail.com', 'Ana2', 'Postulante'),
-('Carlos', 'García', 'carlos.garcia@mail.com', 'Carlos3', 'Postulante'),
-('Marta', 'Ruiz', 'marta.ruiz@mail.com', 'Marta4', 'Postulante'),
-('Luis', 'Hernández', 'luis.hernandez@mail.com', 'Luis5', 'Postulante'),
-('Laura', 'Fernández', 'laura.fernandez@mail.com', 'Laura6', 'Postulante'),
-('Diego', 'Martínez', 'diego.martinez@mail.com', 'Diego7', 'Postulante'),
-('Clara', 'Sánchez', 'clara.sanchez@mail.com', 'Clara8', 'Postulante'),
-('Alberto', 'Jiménez', 'alberto.jimenez@mail.com', 'Alberto9', 'Postulante'),
-('Valeria', 'Díaz', 'valeria.diaz@mail.com', 'Valeria10', 'Postulante'),
-('Carla', 'Gómez', 'carla.gomez@mail.com', 'Carla11', 'Reclutador'),
-('Andrés', 'Flores', 'andres.flores@mail.com', 'Andres12', 'Reclutador'),
-('Sofía', 'Navarro', 'sofia.navarro@mail.com', 'Sofia13', 'Reclutador'),
-('Gabriel', 'Muñoz', 'gabriel.munoz@mail.com', 'Gabriel14', 'Reclutador'),
-('Paula', 'Castillo', 'paula.castillo@mail.com', 'Paula15', 'Reclutador'),
-('José', 'Silva', 'jose.silva@mail.com', 'Jose16', 'Reclutador'),
-('Eva', 'Mendoza', 'eva.mendoza@mail.com', 'Eva17', 'Reclutador'),
-('Roberto', 'Iglesias', 'roberto.iglesias@mail.com', 'Roberto18', 'Reclutador'),
-('Luz', 'Vega', 'luz.vega@mail.com', 'Luz19', 'Reclutador'),
-('Oscar', 'Campos', 'oscar.campos@mail.com', 'Oscar20', 'Reclutador');
-
 -- Visualizar tabla Usuarios
 SELECT * FROM Usuarios;
 
